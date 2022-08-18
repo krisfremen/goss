@@ -27,6 +27,10 @@ jobs:
 #        if: ${{ runner.os == 'Windows' }}
 #        run: |
 #          choco install make
+      - name: Install dependencies Mac
+        if: ${{ runner.os == 'MacOS' }}
+        run: |
+          brew install coreutils
       - name: Install dependencies
         run: |
           go version
