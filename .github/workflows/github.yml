@@ -24,7 +24,7 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
       - name: Install dependencies Windows
-        if: ${{ os.runner == 'Windows' }}
+        if: ${{ runner.os == 'Windows' }}
         run: |
           choco install make
       - name: Install dependencies
