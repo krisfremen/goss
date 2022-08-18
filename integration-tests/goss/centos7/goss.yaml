@@ -15,14 +15,14 @@ group:
   apache:
     exists: true
     gid: 48
-process:
-  httpd:
-    running: true
-port:
-  tcp:80:
-    listening: true
-    ip:
-    - '0.0.0.0'
+#process:
+#  httpd:
+#    running: true
+#port:
+#  tcp:80:
+#    listening: true
+#    ip:
+#    - '0.0.0.0'
 #addr:
 #  tcp://127.0.0.1:80:
 #    reachable: true
