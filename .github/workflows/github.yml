@@ -23,17 +23,10 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go-version }}
-      - name: Install dependencies
+      - name: Install dependencies Windows
+        runs-on: windows-latest
         run: |
-          if [ "$RUNNER_OS" == "Windows" ]; then
           choco install make
-          elif [ "$RUNNER_OS" == "macOS" ]; then
-          brew update
-          brew install coreutils
-          brew upgrade
-          fi
-
-
       - name: Install dependencies
         run: |
           go version
