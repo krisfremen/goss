@@ -44,9 +44,9 @@ service:
   foobar:
     enabled: false
     running: false
-  httpd:
-    enabled: true
-    running: true
+#  httpd:
+#    enabled: true
+#    running: true
 user:
   apache:
     exists: true
