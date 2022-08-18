@@ -12,6 +12,6 @@ service:
   httpd:
     enabled: true
     running: true
-process:
-  httpd:
-    running: true
+#process:
+#  httpd:
+#    running: true

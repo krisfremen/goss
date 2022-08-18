@@ -140,8 +140,8 @@ dns:
 process:
   foobar:
     running: false
-  httpd:
-    running: true
+#  httpd:
+#    running: true
 kernel-param:
   kernel.ostype:
     value: Linux
